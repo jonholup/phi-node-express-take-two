@@ -1,4 +1,4 @@
-console.log('Starting up the server');
+console.log('oink');
 
 var express = require('express');
 var app = express();
