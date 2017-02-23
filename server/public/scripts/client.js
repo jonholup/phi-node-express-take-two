@@ -37,7 +37,7 @@ $(document).ready(function(){
         getFishData();
       },
       error: function(error){
-        alert('Do not leave field blank!');
+        alert('Please enter a new fish name');
       }
     });
   });

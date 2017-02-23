@@ -38,15 +38,19 @@ app.get('/fish/last/name', function(req, res){
 
 app.post('/fish/new', function(req, res){
   var newFish = req.body;
-  // for (var i = 0; i < fishiesList.length; i++) {
-  //   if (fishiesList[i] == newFish)
-  // }
-  if (newFish.name !== ''){ // length of object - nono
-    fishiesList.push(newFish);
-    res.sendStatus(200);
-  } else {
+  var contains = false;
+
+fishiesList.forEach(function(sameName){
+  if(sameName.name == newFish.name){
+    contains = true;
+  }
+})
+    if (!contains && newFish.name !== '') {
+      fishiesList.push(newFish);
+      res.sendStatus(200);
+    }else {
     res.sendStatus(400);
-};
+  }
 });
 
 
