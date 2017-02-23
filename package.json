@@ -1,7 +1,6 @@
 {
   "name": "node-express-take-two",
   "version": "1.0.0",
-  "description": "",
   "main": "server/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,5 +11,15 @@
   "dependencies": {
     "body-parser": "^1.16.1",
     "express": "^4.14.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonholup/phi-node-express-take-two.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonholup/phi-node-express-take-two/issues"
+  },
+  "homepage": "https://github.com/jonholup/phi-node-express-take-two#readme",
+  "devDependencies": {},
+  "description": ""
 }

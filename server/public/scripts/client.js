@@ -35,6 +35,9 @@ $(document).ready(function(){
       success: function(response){
         console.log(response);
         getFishData();
+      },
+      error: function(error){
+        alert('Do not leave field blank!');
       }
     });
   });

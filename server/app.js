@@ -38,8 +38,15 @@ app.get('/fish/last/name', function(req, res){
 
 app.post('/fish/new', function(req, res){
   var newFish = req.body;
-  fishiesList.push(newFish);
-  res.sendStatus(200);
+  // for (var i = 0; i < fishiesList.length; i++) {
+  //   if (fishiesList[i] == newFish)
+  // }
+  if (newFish.name !== ''){ // length of object - nono
+    fishiesList.push(newFish);
+    res.sendStatus(200);
+  } else {
+    res.sendStatus(400);
+};
 });
 
 
